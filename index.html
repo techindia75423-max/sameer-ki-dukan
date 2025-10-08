@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EliteCart - Premium Shopping</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background: linear-gradient(90deg, #ff0048, #ff7a00);
+      padding: 20px 60px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe7d1;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      flex-direction: column;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background: #fff;
+      color: #ff0048;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff0048;
+      color: #fff;
+    }
+
+    /* Product Section */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 60px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 20px;
+    }
+
+    .product-content h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #ff0048;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      margin-top: 15px;
+      background: #ff7a00;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .buy-btn:hover {
+      background: #ff0048;
+    }
+
+    /* Login Page */
+    .login-container {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff0048, #ff7a00);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #ff0048;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: #ff0048;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      background: #ff7a00;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>EliteCart</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Shop the Latest Trends</h2>
+    <p>Premium Quality • Affordable Prices • Fast Delivery</p>
+    <a href="#shop" class="btn">Start Shopping</a>
+  </section>
+
+  <!-- Products -->
+  <section id="shop" class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4d7d13d?auto=format&fit=crop&w=800&q=80" alt="Shoes">
+      <div class="product-content">
+        <h3>Stylish Sneakers</h3>
+        <p class="price">₹2,999</p>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1600180758890-6beaa0670d92?auto=format&fit=crop&w=800&q=80" alt="Watch">
+      <div class="product-content">
+        <h3>Luxury Watch</h3>
+        <p class="price">₹4,499</p>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1580894894511-1e7e3e07df19?auto=format&fit=crop&w=800&q=80" alt="Bag">
+      <div class="product-content">
+        <h3>Leather Handbag</h3>
+        <p class="price">₹3,199</p>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 EliteCart. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
